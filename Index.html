@@ -1,0 +1,148 @@
+yshs
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>RSS Feed Content Spinner</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />	
+	<meta name="robots" content="index, follow" />
+	<meta name="viewport" content="width=device-width">
+	<meta name="description" content="Convert any RSS feeds into full rss with article rewriter or content spinner feature" />
+	<meta name="keywords" content="content, rss feed, autoblog, article, full rss, article rewriter, content spinner" />
+	<link rel="stylesheet" href="css/bootstrap.min.css" type="text/css" media="screen" />
+	<link rel="stylesheet" href="css/style.css" type="text/css" media="screen" />
+	<script type="text/javascript" src="js/jquery.min.js"></script>
+	<script type="text/javascript" src="js/bootstrap-tooltip.js"></script>
+	<script type="text/javascript" src="js/bootstrap-popover.js"></script>
+	<script type="text/javascript" src="js/bootstrap-tab.js"></script>
+	</head>
+  <body>
+	<div class="container">
+	<h1 style="padding-top: 5px; padding-left:100px;">RSS Feed Content Spinner </h1>
+    <form method="get" action="go.php" id="form" class="form-horizontal">
+		<legend>Full RSS Feed Generator with article rewriter</legend>
+
+	
+	<fieldset>	
+		<div class="control-group">
+			<label class="control-label" for="url">Source Feed</label>
+			<div class="controls"><input type="text" id="url" name="url" style="width: 450px;" title="Source Feed URL" /><br />
+			<div style="font-size:small; color:#888">Enter valid RSS feed here, e.g. http://feeds.foxnews.com/foxnews/latest</div></div>
+		</div>
+
+		<div class="control-group">
+	<label class="control-label" for="key">Access key</label>
+	<div class="controls">
+	<input type="text" id="key" name="key" class="input-medium" required title="Access Key" />
+	</div>
+	</div>
+	
+	<div class="control-group">
+	<label class="control-label" for="links">Links</label>
+	<div class="controls">
+	<select name="links" id="links" class="input-medium" title="Link handling">
+		<option value="preserve" selected="selected">preserve</option>
+		<option value="footnotes">add to footnotes</option>
+		<option value="remove">remove</option>
+	</select>
+	</div>
+	</div>
+	<div class="control-group">
+	<label class="control-label" for="rewrite">Rewrite RSS</label>
+	<div class="controls">
+	<select name="rewrite" id="rewrite" title="Rewrite rss title & content">
+		<option value="1" selected="selected">Rewrite title & content</option>
+		<option value="2">Rewrite content</option>
+		<option value="3">Rewrite title</option>
+		<option value="">Don't rewrite</option>
+	</select>
+	</div>
+	</div>
+	
+
+	</fieldset>
+	<div class="form-actions">
+		<input type="submit" id="submit" name="submit" value="Create Feed" class="btn btn-primary" />
+	</div>
+	</form>
+	
+	<ul class="nav nav-tabs">
+	<li class="active"><a href="#about" data-toggle="tab">About</a></li>
+	<li><a href="#access" data-toggle="tab">Access Key</a></li>	
+	</ul>
+	
+	<div class="tab-content">
+	
+	<!-- ABOUT TAB -->
+	
+	<div class="active tab-pane" id="about">
+	
+	<h3>What is RSS Content Spinner</h3>
+	<p><b>RSS Feed Content Spinner</b> is full rss feed generator with <b>article rewriter</b> feature. It not only convert short rss to full text rss, but it can also rewrite the contents of the rss feed. 
+	Rewriting or spinning the article will generate <b>unique article</b>, which is good for <b>SEO</b>.</p> 
+
+	<h3>Why RSS Feed</h3>
+	<p>The most reason why we use rss feed is that we can us it to share, import, add or update contents automatically. 
+	If you have a WordPress blog and looking for a way on how to add or import contents and updating your blog automatically then rss feed is what you need, 
+	just install <a href="https://downloads.wordpress.org/plugin/wpematico.1.1.96.zip" rel="nofollow" target="blank">WPeMatico 1.1.96</a> <b>WordPress autoblog plugin</b> and add rss feed to it, you will have auto update wordpress blog in seconds.</p> 
+	
+	<h3>How to use this tool</h3>
+	<p>Simply enter a <b>valid RSS feed</b> to "Source Feed" field, set the option and click "Create Feed" button, you will get full rss feed with spun content in seconds. 
+	Click <a href="http://en.wikipedia.org/wiki/RSS" rel="nofollow" target="blank">RSS feed</a> and <a href="http://validator.w3.org/feed/" rel="nofollow" target="blank">RSS Validator</a> 
+	if you need more information about RSS feed and what is valid rss feed.</p>
+	
+	</div>
+
+	<!-- Access Key -->
+	
+	<div id="access" class="tab-pane">
+	
+	<h3>Free Access Key</h3>
+
+	<p>Current FREE access key: "<b>FREE26A7E</b>"</p>
+
+	<p>Make sure there is NO SPACE before or after the access key. If this key doesn't work, please try again the tool after 30 minutes, system will generate a new key automatically. Please note that free access key is a temporary key, it will valid for few days only.<br/></p>
+	
+	<div>
+	For your convenience, subscribe the access key now! You can use the key for unlimited usage as long as your subscription life.<br/>
+	<div style="float: left; width: 55%; padding:10px;"><form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
+<input type="hidden" name="cmd" value="_s-xclick">
+<input type="hidden" name="hosted_button_id" value="MBZWTDEVGQNRC">
+<table>
+<tr><td><input type="hidden" name="on0" value=""></td></tr><tr><td><select name="os0">
+	<option value="$5/month">$5/month : $5,00 USD - monthly</option>
+	<option value="$3/month">$3/month : $36,00 USD - yearly</option>
+</select> </td></tr>
+</table>
+<input type="hidden" name="currency_code" value="USD">
+<input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_subscribeCC_LG.gif" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!">
+<img alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1">
+</form>
+</div>
+Or <b>BUY the script for $29 if you want to host it on your own server</b>. It's a PHP script, you will need a web server with PHP support.<br/><br/>
+<form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
+<input type="hidden" name="cmd" value="_s-xclick">
+<input type="hidden" name="hosted_button_id" value="C95SDPDR2QXVS">
+<input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_buynowCC_LG.gif" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!">
+<img alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1">
+</form>
+</div><br/>
+<p>Be sure to add our email <b>FullContentRSS@gmail.com</b> to your email contact. We will send the access key or the script to your PayPal email within few hours.</p><br/>
+
+      
+
+
+
+	
+
+
+	
+	
+	</div>	
+	
+	
+
+	<br /><br /><br /><center><a href="http://spinner.fullcontentrss.com">RSS Content Spinner</a>  Powered by. <a href="http://fullcontentrss.com" target="_blank">Full RSS</a> | <a href="mailto:fullcontentrss@gmail.com" target="_top">Contact Us</a></center>	
+	
+	</div>
+  </body>
+</html>
